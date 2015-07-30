@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project name="myHadoop" default="build-jar" basedir="." >
+	<property name="src" value="."/>
+	<property name="build" value="build"/>
+	<property name="external-1" value="/opt/cloudera/parcels/CDH-4.6.0-1.cdh4.6.0.p0.26/lib/hadoop/client-0.20"/>
+	<property name="external-2" value="/opt/cloudera/parcels/CDH-4.6.0-1.cdh4.6.0.p0.26/lib/hadoop/client"/>
+
+        <path id="project.classpath">
+	         <fileset dir="${external-1}">
+		   <include name="*.jar"/>
+		 </fileset>
+	         <fileset dir="${external-2}">
+		   <include name="*.jar"/>
+		 </fileset>
+	</path>
+
+	<target name="init">
+		<mkdir dir="${build}"/>
+		<javac destdir="${build}">
+		  <src path="${src}"/>
+		  <classpath refid="project.classpath"/>
+		</javac>
+	</target>
+
+	<target name="build-jar" depends="init"> 
+		<jar basedir="${build}" destfile="${src}/lin1_exercise2.jar">
+			<manifest>
+				<attribute name="Main-Class" value="lin1_exercise2"/>
+			</manifest>
+		</jar>
+	</target>
+		
+</project>

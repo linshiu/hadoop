@@ -1,0 +1,1802 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook version='8.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8000.13.0825.0947                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='cluster3 (Clusters.xlsx)' inline='true' name='excel.42135.015177789355' version='8.1'>
+      <connection auto-extract='yes' class='excel' driver='Ace12' filename='Z:\Clusters.xlsx' header='yes' imex='1'>
+        <relation name='cluster3$' table='[cluster3$]' type='table' />
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[excel.42135.015177789355].[avg:average_Medicare_allowed_amt:qk]&quot;' value='average_Medicare_allowed_amt' />
+          <alias key='&quot;[excel.42135.015177789355].[avg:average_Medicare_payment_amt:qk]&quot;' value='average_Medicare_payment_amt' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[average_Medicare_allowed_amt]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='real' name='[average_Medicare_payment_amt]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='real' name='[average_submitted_chrg_amt]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='real' name='[bene_day_srvc_cnt]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='real' name='[bene_unique_cnt]' role='measure' type='quantitative'>
+      </column>
+      <column aggregation='Sum' datatype='real' name='[clustID]' role='dimension' type='ordinal'>
+      </column>
+      <column datatype='real' name='[line_srvc_cnt]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='real' name='[stdev_Medicare_allowed_amt]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='real' name='[stdev_Medicare_payment_amt]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='real' name='[stdev_submitted_chrg_amt]' role='measure' type='quantitative'>
+      </column>
+      <column-instance column='[average_Medicare_allowed_amt]' derivation='Avg' name='[avg:average_Medicare_allowed_amt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_Medicare_payment_amt]' derivation='Avg' name='[avg:average_Medicare_payment_amt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_Medicare_allowed_amt]' derivation='Sum' name='[sum:average_Medicare_allowed_amt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_Medicare_payment_amt]' derivation='Sum' name='[sum:average_Medicare_payment_amt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_submitted_chrg_amt]' derivation='Sum' name='[sum:average_submitted_chrg_amt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[bene_day_srvc_cnt]' derivation='Sum' name='[sum:bene_day_srvc_cnt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[bene_unique_cnt]' derivation='Sum' name='[sum:bene_unique_cnt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[line_srvc_cnt]' derivation='Sum' name='[sum:line_srvc_cnt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stdev_Medicare_allowed_amt]' derivation='Sum' name='[sum:stdev_Medicare_allowed_amt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stdev_Medicare_payment_amt]' derivation='Sum' name='[sum:stdev_Medicare_payment_amt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stdev_submitted_chrg_amt]' derivation='Sum' name='[sum:stdev_submitted_chrg_amt:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:average_Medicare_allowed_amt:qk]&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:line_srvc_cnt:qk]&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_allowed_amt:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:average_submitted_chrg_amt:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:bene_unique_cnt:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_submitted_chrg_amt:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:average_Medicare_payment_amt:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:bene_day_srvc_cnt:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_payment_amt:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='cluster3-2' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='cluster3-2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='cluster3-1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cluster3 (Clusters.xlsx)' name='excel.42135.015177789355' />
+          </datasources>
+          <datasource-dependencies datasource='excel.42135.015177789355'>
+            <column datatype='real' name='[average_Medicare_allowed_amt]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[average_Medicare_payment_amt]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[average_submitted_chrg_amt]' role='measure' type='quantitative'>
+            </column>
+            <column aggregation='Sum' datatype='real' name='[clustID]' role='dimension' type='ordinal'>
+            </column>
+            <column-instance column='[clustID]' derivation='None' name='[none:clustID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[average_Medicare_allowed_amt]' derivation='Sum' name='[sum:average_Medicare_allowed_amt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_Medicare_payment_amt]' derivation='Sum' name='[sum:average_Medicare_payment_amt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_submitted_chrg_amt]' derivation='Sum' name='[sum:average_submitted_chrg_amt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[excel.42135.015177789355].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:average_Medicare_allowed_amt:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:average_submitted_chrg_amt:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:average_Medicare_payment_amt:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[excel.42135.015177789355].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[excel.42135.015177789355].[sum:average_Medicare_allowed_amt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:average_submitted_chrg_amt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:average_Medicare_payment_amt:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[excel.42135.015177789355].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[excel.42135.015177789355].[:Measure Names]' value='49' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[excel.42135.015177789355].[:Measure Names]' value='center' />
+            <format attr='wrap' field='[excel.42135.015177789355].[:Measure Names]' value='on' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[excel.42135.015177789355].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[excel.42135.015177789355].[Multiple Values]</rows>
+        <cols>([excel.42135.015177789355].[none:clustID:ok] / [excel.42135.015177789355].[:Measure Names])</cols>
+        <mark-labels>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_submitted_chrg_amt:qk]&quot;</value>
+                <value>4521.7214412234216</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_Medicare_allowed_amt:qk]&quot;</value>
+                <value>1020.9746902051938</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_Medicare_payment_amt:qk]&quot;</value>
+                <value>808.21385887870088</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_submitted_chrg_amt:qk]&quot;</value>
+                <value>688.3128174262755</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_submitted_chrg_amt:qk]&quot;</value>
+                <value>108.20528092259619</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_Medicare_allowed_amt:qk]&quot;</value>
+                <value>48.884598972929055</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_Medicare_payment_amt:qk]&quot;</value>
+                <value>37.289630378391443</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_Medicare_allowed_amt:qk]&quot;</value>
+                <value>205.41072465401601</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:average_Medicare_payment_amt:qk]&quot;</value>
+                <value>161.51368365864869</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+    <worksheet name='cluster3-2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cluster3 (Clusters.xlsx)' name='excel.42135.015177789355' />
+          </datasources>
+          <datasource-dependencies datasource='excel.42135.015177789355'>
+            <column aggregation='Sum' datatype='real' name='[clustID]' role='dimension' type='ordinal'>
+            </column>
+            <column-instance column='[clustID]' derivation='None' name='[none:clustID:ok]' pivot='key' type='ordinal' />
+            <column datatype='real' name='[stdev_Medicare_allowed_amt]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[stdev_Medicare_payment_amt]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[stdev_submitted_chrg_amt]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[stdev_Medicare_allowed_amt]' derivation='Sum' name='[sum:stdev_Medicare_allowed_amt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stdev_Medicare_payment_amt]' derivation='Sum' name='[sum:stdev_Medicare_payment_amt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stdev_submitted_chrg_amt]' derivation='Sum' name='[sum:stdev_submitted_chrg_amt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[excel.42135.015177789355].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:stdev_Medicare_allowed_amt:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:stdev_submitted_chrg_amt:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:stdev_Medicare_payment_amt:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[excel.42135.015177789355].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_allowed_amt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_submitted_chrg_amt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_payment_amt:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[excel.42135.015177789355].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[excel.42135.015177789355].[:Measure Names]' value='49' />
+            <format attr='width' field='[excel.42135.015177789355].[Multiple Values]' value='44' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[excel.42135.015177789355].[:Measure Names]' value='center' />
+            <format attr='wrap' field='[excel.42135.015177789355].[:Measure Names]' value='on' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[excel.42135.015177789355].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[excel.42135.015177789355].[Multiple Values]</rows>
+        <cols>([excel.42135.015177789355].[none:clustID:ok] / [excel.42135.015177789355].[:Measure Names])</cols>
+        <mark-labels>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_allowed_amt:qk]&quot;</value>
+                <value>112.83456687195907</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_submitted_chrg_amt:qk]&quot;</value>
+                <value>376.40488425624892</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_payment_amt:qk]&quot;</value>
+                <value>113.8198001992323</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_allowed_amt:qk]&quot;</value>
+                <value>18.30093464152074</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_payment_amt:qk]&quot;</value>
+                <value>7.0821972109286806</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_submitted_chrg_amt:qk]&quot;</value>
+                <value>4.8528324669296126</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_allowed_amt:qk]&quot;</value>
+                <value>1.3187856414560319</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_submitted_chrg_amt:qk]&quot;</value>
+                <value>61.205204907667131</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='26' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_payment_amt:qk]&quot;</value>
+                <value>24.885699092002454</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+    <worksheet name='cluster3-3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cluster3 (Clusters.xlsx)' name='excel.42135.015177789355' />
+          </datasources>
+          <datasource-dependencies datasource='excel.42135.015177789355'>
+            <column datatype='real' name='[bene_day_srvc_cnt]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[bene_unique_cnt]' role='measure' type='quantitative'>
+            </column>
+            <column aggregation='Sum' datatype='real' name='[clustID]' role='dimension' type='ordinal'>
+            </column>
+            <column datatype='real' name='[line_srvc_cnt]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[clustID]' derivation='None' name='[none:clustID:ok]' pivot='key' type='ordinal' />
+            <column datatype='real' name='[stdev_Medicare_allowed_amt]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[stdev_Medicare_payment_amt]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[stdev_submitted_chrg_amt]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[bene_day_srvc_cnt]' derivation='Sum' name='[sum:bene_day_srvc_cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[bene_unique_cnt]' derivation='Sum' name='[sum:bene_unique_cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[line_srvc_cnt]' derivation='Sum' name='[sum:line_srvc_cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stdev_Medicare_allowed_amt]' derivation='Sum' name='[sum:stdev_Medicare_allowed_amt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stdev_Medicare_payment_amt]' derivation='Sum' name='[sum:stdev_Medicare_payment_amt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stdev_submitted_chrg_amt]' derivation='Sum' name='[sum:stdev_submitted_chrg_amt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[excel.42135.015177789355].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:line_srvc_cnt:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:bene_unique_cnt:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel.42135.015177789355].[sum:bene_day_srvc_cnt:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[excel.42135.015177789355].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[excel.42135.015177789355].[sum:line_srvc_cnt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:bene_unique_cnt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:bene_day_srvc_cnt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_allowed_amt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_submitted_chrg_amt:qk]&quot;</bucket>
+              <bucket>&quot;[excel.42135.015177789355].[sum:stdev_Medicare_payment_amt:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[excel.42135.015177789355].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[excel.42135.015177789355].[:Measure Names]' value='49' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[excel.42135.015177789355].[:Measure Names]' value='center' />
+            <format attr='wrap' field='[excel.42135.015177789355].[:Measure Names]' value='on' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[excel.42135.015177789355].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[excel.42135.015177789355].[Multiple Values]</rows>
+        <cols>([excel.42135.015177789355].[none:clustID:ok] / [excel.42135.015177789355].[:Measure Names])</cols>
+        <mark-labels>
+          <mark-label id='27' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:line_srvc_cnt:qk]&quot;</value>
+                <value>50.188803561008136</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='28' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:bene_unique_cnt:qk]&quot;</value>
+                <value>37.919343423682633</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='29' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:line_srvc_cnt:qk]&quot;</value>
+                <value>282.64910288063436</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='30' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:bene_day_srvc_cnt:qk]&quot;</value>
+                <value>47.110977290506</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='31' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:line_srvc_cnt:qk]&quot;</value>
+                <value>81.908134187880961</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='32' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:bene_day_srvc_cnt:qk]&quot;</value>
+                <value>171.788436090049</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='33' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:bene_unique_cnt:qk]&quot;</value>
+                <value>100.14247284010989</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='34' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:bene_unique_cnt:qk]&quot;</value>
+                <value>59.595119927533439</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='35' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                    <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[excel.42135.015177789355].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  <field>[excel.42135.015177789355].[:Measure Names]</field>
+                  <field>[excel.42135.015177789355].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3.0000000000000000</value>
+                <value>&quot;[excel.42135.015177789355].[sum:bene_day_srvc_cnt:qk]&quot;</value>
+                <value>75.437156508307083</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style>
+      </style>
+      <size maxheight='827' maxwidth='1169' minheight='827' minwidth='1169' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='5' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='3' type='layout-basic' w='99658' x='0' y='0'>
+              <zone h='33253' id='1' name='cluster3-1' show-title='true' w='99658' x='0' y='0'>
+              </zone>
+              <zone h='33494' id='7' name='cluster3-2' show-title='true' w='99658' x='0' y='33253'>
+              </zone>
+              <zone h='33253' id='8' name='cluster3-3' show-title='true' w='99658' x='0' y='66747'>
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='0' name='cluster3-1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='0' param='[excel.42135.015177789355].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel.42135.015177789355].[:Measure Names]</field>
+          <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+          <field>[excel.42135.015177789355].[none:clustID:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='cluster3-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='0' param='[excel.42135.015177789355].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+          <field>[excel.42135.015177789355].[none:clustID:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='1' name='cluster3-3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='0' param='[excel.42135.015177789355].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+          <field>[excel.42135.015177789355].[none:clustID:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='dashboard' maximized='0' name='Dashboard 1'>
+      <zones>
+        <zone name='cluster3-1'>
+          <viewpoint>
+            <zoom type='entire-view' />
+          </viewpoint>
+          <highlight>
+            <color-one-way>
+              <field>[excel.42135.015177789355].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </zone>
+        <zone name='cluster3-2'>
+          <viewpoint>
+            <zoom type='entire-view' />
+          </viewpoint>
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='horizontal'>
+                <node-reference>
+                  <fields>
+                    <field>[excel.42135.015177789355].[none:clustID:ok]</field>
+                  </fields>
+                  <multibucket>
+                    <bucket>1.0000000000000000</bucket>
+                  </multibucket>
+                </node-reference>
+                <page-reference>
+                </page-reference>
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+        </zone>
+        <zone name='cluster3-3'>
+          <viewpoint>
+            <zoom type='entire-view' />
+          </viewpoint>
+        </zone>
+      </zones>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='cluster3-1' width='192'>
+      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
+      7ruYdHz4/9+jOBNKWT7sAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='cluster3-2' width='192'>
+      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
+      MUXHR1OePY/y7fkUFh9GZTVlVFZVRg1tDTQ6PkpvJt94rvIeuB/2ci4qLaLE1ETKzs8mW7GN
+      3+rhqHVQSUUJ1bfWk+uNi5wup+cq74HG1z/UT/YSO6VmplJqdipvph4cHUylNaVUXF5MdS11
+      NDYxRoPDg7qNVYsAIL9zzMlpzsrNooS0BNap6kd91zbXkmvCxSH5i+V7Gb4aAWAzRidFU2hM
+      KAVHBlNUchQX/MPAh3wsPSedYlJjKCY5hs81ir23e5SQnkDBUcEUFBlEkYmRVF5XTo+CH1FI
+      VAilW9IpLj2Oj6+srniu8h4YUdJz0ykoIojvEZkUSZWvKulRyCMKjAiktOw0SshMoLC4MHLP
+      uz1XaUOLAOiNcwtzKSAsgNMbkRDBpH0W9oz8Q/0pLSuNki3JFBoXSuOT456rvAd6Y7y/6fnL
+      5xQWG0bh8eFMrBdRL+hp8FNKzVIabW4qhUSH0OCI8cm2k9MT7oCgKyIugkJjQ6m4spjCEsLo
+      UeAjSslIoYz8DG6w3b3dnqu0oUkAhTCNbY2sPzIhkolrK7NRdGo0PQx4SMnpyZRZkElBUUHU
+      3Nbs9Wjw1QiABopeM82SRll5WZRjy+FGk5mfyb1RfUs9NbU38XyCaqMZsTPRQNEjoOdR9YNU
+      GbkZ/OoWhGk7ejq4h0Io0ah+NFCEe1OyUyg7L5v1YwIQ94P+itoKng/JteVyFAP6cY1WRWgR
+      AGZObWMtj4pq+vGZnJXMI01pZSkNOAf4GKJIrF9pJN5WNBooRhjot1gtlGNV9OdnUVJGEv+P
+      HnTINcQdBUwMo/phxnb2dn7ShzJBvar/20vtNDI2wnW+vLr8ST+uu4jLCNA/3M/pV9OOe7B+
+      m4WsxVYaHhvm9M8tzLF+mF4Xy/kivhoBkAEkSM04vqOho5Eg5IXGCDMAkYaOjg5qamqiYecw
+      H/MWrNejHwJS4BPmET6ha3dvl7q6ulg/zC3Yv96C04qd8pW0cvoV/efzhLzjFTGve16z/p7e
+      Hr7mIrQIAECvWhaf9HsqEoJrQN6+/j7W3/W6i8/xFhgFzuvHd1U/8gX90Dc4NMj6Ozo7OD/e
+      Qku/WvaqftzPOepk/W3tbbSzdxb7P4/LfADU3yf9ih7oxP9qG4J+XDc2Psb6W1pbaHNr03O1
+      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
+    </thumbnail>
+    <thumbnail height='192' name='cluster3-3' width='192'>
+      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
+      k7G1CYTIKQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      WBiKdDgAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -2,16 +2,16 @@
 
 **Team: Steven Lin, Ahsan Rehman**
 
-![Cluster](https://github.com/linshiu/msia-big-data-analytics/blob/master/hadoop/medicare/1_Visuals/clusters.png)
+![Cluster](https://github.com/linshiu/hadoop/blob/master/medicare/1_Visuals/clusters.png)
 
 - Map reduce job that will execute a single iteration of k-means
 - External script that will call this map reduce job many times. The script takes the output of
 the previous iteration, use it as input to map reduce.
 - Distributed cache concept used. 
 
-[More Info Dataset](https://github.com/linshiu/msia-big-data-analytics/blob/master/hadoop/medicare/0_Info/Medicare-Physician-and-Other-Supplier-PUF-Methodology.pdf)
+[More Info Dataset](https://github.com/linshiu/hadoop/blob/master/medicare/0_Info/Medicare-Physician-and-Other-Supplier-PUF-Methodology.pdf)
 
-[Report](https://github.com/linshiu/msia-big-data-analytics/blob/master/hadoop/medicare/2_Final%20Output/lin_rehman_report.pdf)
+[Report](/lin_rehman_report.pdf)
 
 ## 1. Standardization:
 

@@ -11,7 +11,7 @@ the previous iteration, use it as input to map reduce.
 
 [More Info Dataset](https://github.com/linshiu/hadoop/blob/master/medicare/0_Info/Medicare-Physician-and-Other-Supplier-PUF-Methodology.pdf)
 
-[Report](/lin_rehman_report.pdf)
+[Report](/2_Final%20Output/lin_rehman_report.pdf)
 
 ## 1. Standardization:
 

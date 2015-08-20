@@ -11,3 +11,15 @@
 	```shell
 	hadoop fs –getmerge <outputdir> <filename>
 	```
+
+# Exercises
+
+## Google
+
+## IBM
+
+## Medicare
+
+## Music
+
+## Temperature

@@ -14,16 +14,6 @@
 
 # Exercises
 
-## Google
-
-## IBM
-
-## Medicare
-
-## Music
-
-## Temperature
-
 - **[Goolge](/google)**
 
 - **[IBM](/ibm)**
